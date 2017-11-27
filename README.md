@@ -1,1 +1,1 @@
-# APix
+# InEd (Infographic Editor)

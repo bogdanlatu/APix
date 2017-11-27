@@ -1,0 +1,97 @@
+<!doctype html>
+
+<head>
+    
+    <title>InEd</title>
+    <link rel="stylesheet" href="home.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+              anchors: ['firstPage', 'secondPage', '3rdPage'],
+              menu: '#menu',
+			  slidesNavigation: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage/1">Menu</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact</a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <h1>InEd</h1>
+		<p>Infographic Editor</p>
+        
+    </div>
+    <div class="section" id="section1">
+        <div class="slide" id="slide1">
+            <div class="intro">
+                <h1><a href="#">Click here</a></h1>
+                <p>to enter the editor</p>
+            </div>
+        </div>
+        <div class="slide active" id="slide2">
+		
+			<button type="button"><a href="#">Register</a></button>
+			
+			<!-- Button to open the modal login form -->
+			<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+			<!-- The Modal -->
+			<div id="id01" class="modal">
+
+
+			<!-- Modal Content -->
+			<form class="modal-content animate" action="/action_page.php">
+				<div class="imgcontainer">
+					<img src="..\images\img_avatar2.png" alt="Avatar" class="avatar">
+				</div>
+
+			<div class="container">
+				<label><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+			<button type="submit">Login</button>
+		</div>
+
+				<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				</div>
+			</form>
+		</div>
+		
+
+		
+        </div>
+        <div class="slide" id="slide3">
+            <h1>Coming soon...</h1>
+        </div>
+
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>Members</h1>
+            <p><a href="https://www.facebook.com/bogdanandrei.latu">Latu Bogdan Andrei</a></p>
+			<p><a href="https://www.facebook.com/profile.php?id=100004803019299">Ene Eliza Lorena</a></p>
+			<p><a href="https://www.facebook.com/Emy.Hello">Onofras Emilian</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

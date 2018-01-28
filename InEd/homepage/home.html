@@ -1,7 +1,7 @@
 <!doctype html>
 
 <head>
-    
+
     <title>InEd</title>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home.css">
@@ -35,7 +35,7 @@
     <div class="section active" id="section0">
         <h1>InEd</h1>
 		<p>Infographic Editor</p>
-        
+
     </div>
     <div class="section" id="section1">
         <div class="slide" id="slide1">
@@ -45,40 +45,91 @@
             </div>
         </div>
         <div class="slide active" id="slide2">
-		
-			<button type="button"><a href="#">Register</a></button>
-			
-			<!-- Button to open the modal login form -->
-			<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
-			<!-- The Modal -->
-			<div id="id01" class="modal">
+          <button onclick="document.getElementById('id02').style.display='block'">Register</button>
+
+        <div id="id02" class="modal">
 
 
-			<!-- Modal Content -->
-			<form class="modal-content animate" action="/action_page.php">
-				<div class="imgcontainer">
-					<img src="..\images\img_avatar2.png" alt="Avatar" class="avatar">
-				</div>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                </div>
 
-			<div class="container">
-				<label><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="uname" required>
+              <div class="container">
 
-				<label><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="container">
+                <label><b>User Name</b>
+                    <input class="usrimput" placeholder="Enter Name" name="name" autofocus="" required="" type="text">
+                </label>
+                </div>
 
-			<button type="submit">Login</button>
-		</div>
+                <div class="container">
+                <label><b>Password</b>
+                    <input class="usrimput" placeholder="Enter Passoword" name="password" required="" type="password">
+                </label>
+                </div>
 
-				<div class="container" style="background-color:#f1f1f1">
-					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-				</div>
-			</form>
-		</div>
-		
+                <div class="container">
+                <label><b>Password Again</b>
+                    <input class="usrimput" placeholder="Renter Passoword" name="password" required="" type="password">
+                </label>
+                </div>
 
-		
+                <div class="container">
+                <label><b>Email</b>
+                      <input class="usrimput" placeholder="name@domain.com" required="" type="email">
+                </label>
+                </div>
+
+            </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="submit" class="logbtn">Register</button>
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+              </form>
+      </div>
+
+
+  			<!-- Button to open the modal login form -->
+  			<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+  			<!-- The Modal -->
+  			<div id="id01" class="modal">
+
+
+  			<!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+        				<div class="imgcontainer">
+        					<img src="..\images\img_avatar2.png" alt="Avatar" class="avatar">
+        				</div>
+
+        			<div class="container">
+
+              <div class="container">
+        				<label><b>Username</b>
+        				      <input class="usrimput" placeholder="Enter Username" name="uname" required="" type="text">
+                </label>
+              </div>
+
+              <div class="container">
+        		      <label><b>Password</b>
+        		           <input class="usrimput" placeholder="Enter Password" name="psw" required="" type="password">
+                  </label>
+              </div>
+
+        		</div>
+
+        				<div class="container" style="background-color:#f1f1f1">
+                  <button type="submit" class="logbtn">Login</button>
+        					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        				</div>
+        			</form>
+  		</div>
+
+
+
         </div>
         <div class="slide" id="slide3">
             <h1>Coming soon...</h1>

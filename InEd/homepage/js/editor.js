@@ -38,7 +38,14 @@ $(document).ready(function() {
     });
 
     $( "#paintText" ).click(function() {
-        var newtxt =  new fabric.IText($( "#textInput" ).val() , {fontWeight: 'normal',fontFamily: $("#font-family").val(),stroke: $("#text-stroke-color").val()});
+        var newtxt =  new fabric.IText($( "#textInput" ).val() ,
+        {
+          
+          fontFamily: $("#fontFamily").val(),
+          fill: $("#textStrokeColor").val(),
+          fontSize: $("#sizeOfFont").val(),
+          textAlign: $("#textAlign").val()
+        });
         Canvas.add(newtxt);
         $( "#textInput" ).val('');
     })

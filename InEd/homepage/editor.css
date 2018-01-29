@@ -94,9 +94,10 @@ html, body {
     position: absolute;
     left: 0;
     top: 50px;
-    left: 65px;
+    left: 73px;
     z-index: 10;
-    padding: 10px;
+    width: 250px;
+    padding: 14px;
     background-color:#BDD5E9;
     display: none;
 

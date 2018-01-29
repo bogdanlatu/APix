@@ -31,6 +31,16 @@ $(document).ready(function() {
         });
         $(this).attr('href', data );
 
+    });
+
+    $("#addText").click(function () {
+        $("#textOptions").toggle();
+    });
+
+    $( "#paintText" ).click(function() {
+        var newtxt =  new fabric.IText($( "#textInput" ).val() , {fontWeight: 'normal',fontFamily: $("#font-family").val(),stroke: $("#text-stroke-color").val()});
+        Canvas.add(newtxt);
+        $( "#textInput" ).val('');
     })
 
     // create a rectangle object

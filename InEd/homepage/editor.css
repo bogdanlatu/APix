@@ -89,6 +89,24 @@ html, body {
 .tmButtons li {
     position: relative;
 }
+
+#textOptions {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    left: 65px;
+    z-index: 10;
+    padding: 10px;
+    background-color:#BDD5E9;
+    display: none;
+
+}
+#textOptions li {
+    display: block;
+    height: 40px;
+
+}
+
 #exportContainer {
     position: absolute;
     left: 0;

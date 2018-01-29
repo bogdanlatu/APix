@@ -45,11 +45,12 @@
                         <li>
                             <a href="#" class="button" id="export"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
                             <div id="exportContainer">
-                                <ul>
-                                    <li><a href="#" class="button" id="exportSVG" download="export.svg">As SVG</a></li>
-                                    <li><a href="#" class="button" id="exportPNG" download="export.png">As PNG</a></li>
-                                    <li><a href="#" class="button" id="exportJPG" download="export.jpg">As JPG</a></li>
-                                </ul>
+
+                                <a href="#" class="button" id="exportSVG" download="export.svg">As SVG</a>
+                                <br>
+                                <a href="#" class="button" id="exportPNG" download="export.png">As PNG</a>
+                                <br>
+                                <a href="#" class="button" id="exportJPG" download="export.jpg">As JPG</a>
                             </div>
                         </li>
                     </ul>
@@ -62,11 +63,11 @@
                     <ul>
                         <li><a href="#" id="addChart" title="Add Chart"><i class="fa fa-pie-chart" aria-hidden="true"></i></a></li>
 
-                        <li><a href="#" id="addMap" title="Add Map"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                        <!--<li><a href="#" id="addMap" title="Add Map"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>-->
 
                         <li><a href="#" id="addText" title="Add Text"><i class="fa fa-font" aria-hidden="true"></i></i></a>
 
-                          <div id="textOptions">
+                          <div class="submenu" id="textOptions">
                             <textarea type="text" id="textInput" name="chartWidth" placeholder="Text"/></textarea>
 
                             <div>
@@ -114,9 +115,21 @@
 
 
 
-                        <li><a href="#" title="Add Shape"><i class="fa fa-square-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#" title="Add Image"  id="AddImage"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
 
-                        <li><a href="#" title="Upload"><i class="fa fa-upload" aria-hidden="true"></i></a></li>
+                            <div class="submenu" id="AddImg">
+                                <div>
+                                    <!--<label>Image</label>-->
+                                    <input type="file" id="imgInput">
+                                </div>
+
+                                <button id="imgSubmit"> Add Image </button>
+                            </div>
+
+                        </li>
+                        <li><a href="#" title=" Border Settings"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
+                        <li id="removeContainer"><a href="#" title="Remove" id="removeButton"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+
 
                     </ul>
                 </div>

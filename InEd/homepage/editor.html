@@ -39,7 +39,7 @@
     <div class="section active" id="section3">
         <div class="pageContainer">
             <div class="topMenu clearfix">
-                <div class="documentTitle"><span>Untitled Infographic</span></div>
+                <!--<div class="documentTitle"><span>Untitled Infographic</span></div>-->
                 <div class="tmButtons">
                     <ul>
                         <li>
@@ -127,7 +127,28 @@
                             </div>
 
                         </li>
-                        <li><a href="#" title=" Border Settings"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
+                        <li><a href="#" title=" Border Settings" id="borderSettings"><i class="fa fa-wrench" aria-hidden="true"></i></a>
+                            <div class="submenu" id="border">
+                                <div>
+                                    <label style="color: #1f6377 ">Background color</label>
+                                    <input type="color" id="color" value="#ffffff">
+                                </div>
+
+                                <br>
+
+                                <div>
+                                    <label for="boardwidth" style="color: #1f6377 ">Board Width</label>
+                                    <input name="board-width" type="text" id="boardwidth" style="width:40px" value="900">
+                                </div>
+
+                                <br>
+                                <div>
+                                <label for="boardheight" style="color: #1f6377 ">Board Height</label>
+                                <input name="board-height" type="text" id="boardheight" style="width:40px" value="600">
+                                </div>
+
+                            </div>
+                        </li>
                         <li id="removeContainer"><a href="#" title="Remove" id="removeButton"><i class="fa fa-times" aria-hidden="true"></i></a></li>
 
 

@@ -1,12 +1,13 @@
 var Canvas = null;
 
 function resizeCanvas() {
-    $('#canvas').attr('width', window.innerWidth*75/100);
-    $('#canvas').attr('height', window.innerHeight*75/100);
+    Canvas.setWidth($('#boardwidth').val());
+    Canvas.setHeight($('#boardheight').val());
+    Canvas.renderAll();
 }
 
 $(document).ready(function() {
-    resizeCanvas();
+    //resizeCanvas();
     Canvas = new fabric.Canvas('canvas');
 
     // console.log(fabric)
@@ -35,6 +36,10 @@ $(document).ready(function() {
     $("#AddImage").click(function (e) {
         e.preventDefault();
         $("#AddImg").toggle();
+    });
+    $("#borderSettings").click(function (e) {
+        e.preventDefault();
+        $("#border").toggle();
     });
 
     $("#addText").click(function () {
@@ -90,6 +95,13 @@ $(document).ready(function() {
     $("#removeButton").click(function () {
         Canvas.remove( Canvas.getActiveObject() )
 
+    });
+
+    $('#boardwidth, #boardheight').change(resizeCanvas);
+    $('#color').change(function () {
+        Canvas.backgroundColor=$(this).val();
+        //Canvas.renderTop();
+        Canvas.renderAll();
     });
 
     // create a rectangle object

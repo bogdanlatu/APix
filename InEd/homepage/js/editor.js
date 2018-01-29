@@ -1,8 +1,8 @@
 var Canvas = null;
 
 function resizeCanvas() {
-    $('#canvas').attr('width', window.innerWidth*95/100);
-    $('#canvas').attr('height', window.innerHeight);
+    $('#canvas').attr('width', window.innerWidth*50/100);
+    $('#canvas').attr('height', window.innerHeight*50/100);
 }
 
 $(document).ready(function() {
@@ -40,7 +40,7 @@ $(document).ready(function() {
     $( "#paintText" ).click(function() {
         var newtxt =  new fabric.IText($( "#textInput" ).val() ,
         {
-          
+
           fontFamily: $("#fontFamily").val(),
           fill: $("#textStrokeColor").val(),
           fontSize: $("#sizeOfFont").val(),

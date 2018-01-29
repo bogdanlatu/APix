@@ -10,6 +10,8 @@ $(document).ready(function() {
     //resizeCanvas();
     Canvas = new fabric.Canvas('canvas');
 
+
+
     // console.log(fabric)
     $("#export").click(function (e) {
         e.preventDefault();
@@ -49,7 +51,6 @@ $(document).ready(function() {
     $( "#paintText" ).click(function() {
         var newtxt =  new fabric.IText($( "#textInput" ).val() ,
         {
-
           fontFamily: $("#fontFamily").val(),
           fill: $("#textStrokeColor").val(),
           fontSize: $("#sizeOfFont").val(),
@@ -112,5 +113,42 @@ $(document).ready(function() {
         width: 20,
         height: 20
     });
-    Canvas.add(rect);
+    
+    $("#addShape").click(function () {
+        $("#shapeOptions").toggle();
+    });
+
+    $( "#paintSquare" ).click(function() {
+      var shape = new fabric.Rect({
+          left: 100,
+          top: 100,
+          fill: $("#shapeStrokeColor").val(),
+          width: 20,
+          height: 20
+      });
+      Canvas.add(shape);
+    })
+
+    $( "#paintCircle" ).click(function() {
+      var shape = new fabric.Circle({
+          left: 100,
+          top: 100,
+          fill: $("#shapeStrokeColor").val(),
+          radius: 20
+      });
+      Canvas.add(shape);
+    })
+
+    $( "#paintTriangle" ).click(function() {
+      var shape = new fabric.Triangle({
+          left: 100,
+          top: 100,
+          fill: $("#shapeStrokeColor").val(),
+          width: 30,
+          height: 30
+      });
+      Canvas.add(shape);
+    })
+
+
 });

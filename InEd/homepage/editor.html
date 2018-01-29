@@ -40,6 +40,7 @@
         <div class="pageContainer">
             <div class="topMenu clearfix">
                 <div class="documentTitle"><span>Untitled Infographic</span></div>
+
                 <div class="tmButtons">
                     <ul>
                         <li>
@@ -113,7 +114,18 @@
                           </div>
                         </li>
 
+                        <li><a href="#" id="addShape" title="Add Shape"><i class="fa fa-square-o" aria-hidden="true"></i></a>
+                          <div id="shapeOptions" class="submenu">
 
+                            <div>
+                              <label>Color of Shape</label>
+                              <input type="Color" value="" id="shapeStrokeColor">
+                            </div>
+                            <button id="paintSquare"> <i class="fa fa-square" aria-hidden="true"></i></button>
+                            <button id="paintCircle"> <i class="fa fa-circle" aria-hidden="true"></i> </button>
+                            <button id="paintTriangle"> <i class="fa fa-caret-up" aria-hidden="true"></i> </button>
+                          </div>
+                        </li>
 
                         <li><a href="#" title="Add Image"  id="AddImage"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
 
@@ -129,6 +141,7 @@
                         </li>
                         <li><a href="#" title=" Border Settings"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
                         <li id="removeContainer"><a href="#" title="Remove" id="removeButton"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+
 
 
                     </ul>

@@ -21,8 +21,8 @@
     top: 0;
     bottom: 0;
     width: 5%;
-
 }
+
 .sideMenu a {
     padding: 12px 0;
     display: block;
@@ -47,6 +47,7 @@
     clear: both;
     display: table;
 }
+
 html, body {
     margin:0;
     padding:0;
@@ -100,7 +101,7 @@ html, body {
     position: absolute;
     left: 0;
     top: 50px;
-    left: 73px;
+    left: 100%;
     z-index: 10;
     width: 250px;
     padding: 14px;

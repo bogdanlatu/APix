@@ -146,3 +146,140 @@ html, body {
 #removeContainer {
     display: none;
 }
+
+
+
+.hide{
+	display: none;
+}
+
+.btn{
+	cursor: pointer;
+}
+
+section{
+	overflow: hidden;
+	overflow-y: auto;
+	height: 85%;
+	width: 100%;
+}
+
+.slider, .slide{
+	height:100%;
+	width: 100%;
+
+	background: url(images/wild_oliva.png);
+}
+
+.right{
+	float:right;
+}
+
+
+
+
+
+#draw-board{
+	position: relative;
+	float: right;
+	top:100px;
+	width: calc(100% - 250px);
+}
+
+#draw-board:after{
+	content: "";
+	display: block;
+	height: 50px;
+}
+
+
+#charts-wrapper{
+	z-index:1000;
+	background: none;
+	color:white;
+	font-family: 'Verdana';
+	font-size: 14px;
+	font-weight: bold;
+	height: 85%;
+	position: absolute;
+	width: 100%;
+}
+
+#charts-wrapper input, #charts-wrapper select{
+	border:none;
+	padding: 4px 0;
+	position: relative;
+	text-indent: 5px;
+	top:-4px;
+	width: 150px;
+}
+
+#charts-panel{
+	background: #BDD5E9;
+	bottom: 0;
+	height: 500px;
+	left: 150%;
+	margin: auto;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top:-10%;
+	width: 1080px;
+}
+
+#charts-panel #container-wrapper{
+	background: white;
+	height: 400px;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	width: 800px;
+}
+
+#charts-panel .panel-title{
+	margin-left: 0px;
+}
+
+#charts-option-items{
+	margin-top: 70px;
+	width:260px;
+}
+
+#charts-option-items > *{
+	margin-bottom: 20px;
+}
+
+#charts-panel .back-button, #charts-panel .save-button{
+	background: #288898;
+	bottom: 10px;
+	color:white;
+	font-family: 'Verdana';
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	position: absolute; 
+	text-align: center;
+	width: 55px;
+}
+
+
+#charts-wrapper .wrapper{
+	position: relative;
+	width: 150px;
+	top: -21px;
+	left: 110px;
+	height: 22px;
+	overflow: hidden;
+}
+
+#file{
+	top: -34px!important;
+	left: 1px;
+	width: 300px!important;
+	opacity: 0;
+}
+
+#charts-panel .save-button{
+	right:10px;
+}
+

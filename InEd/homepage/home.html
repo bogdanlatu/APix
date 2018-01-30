@@ -13,9 +13,9 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
               sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#4BBFC3', '#ccddff'],
-              anchors: ['firstPage', 'secondPage', '3rdPage'],
-              menu: '#menu',
-			  slidesNavigation: true
+              anchors: ['firstPage', '3rdPage'],
+
+			  slidesNavigation: false
             });
         });
     </script>
@@ -25,8 +25,8 @@
 
 
 <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage/1">Menu</a></li>
+    <li data-menuanchor="firstPage" "><a href="#firstPage">Home</a></li>
+
     <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact</a></li>
     <li><a href="editor.html">Editor</a></li>
 </ul>
@@ -37,7 +37,7 @@
 		<p>Infographic Editor</p>
 
     </div>
-    <div class="section" id="section1">
+ <!--   <div class="section" id="section1">
         <div class="slide" id="slide1">
             <div class="intro">
                 <h1><a href="#">Click here</a></h1>
@@ -51,7 +51,7 @@
         <div id="id02" class="modal">
 
 
-        <!-- Modal Content -->
+        
         <form class="modal-content animate" action="/action_page.php">
                 <div class="imgcontainer">
                 </div>
@@ -92,14 +92,14 @@
       </div>
 
 
-  			<!-- Button to open the modal login form -->
+  			
   			<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
-  			<!-- The Modal -->
+  			
   			<div id="id01" class="modal">
 
 
-  			<!-- Modal Content -->
+  		
         <form class="modal-content animate" action="/action_page.php">
         				<div class="imgcontainer">
         					<img src="..\images\img_avatar2.png" alt="Avatar" class="avatar">
@@ -135,7 +135,7 @@
             <h1>Coming soon...</h1>
         </div>
 
-    </div>
+    </div> -->
     <div class="section" id="section2">
         <div class="intro">
             <h1>Members</h1>

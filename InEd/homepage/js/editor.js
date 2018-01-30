@@ -6,6 +6,164 @@ function resizeCanvas() {
     Canvas.renderAll();
 }
 
+        charts={
+            chart: null,
+
+            chartsOnCanvas: [],
+
+            options: {},
+
+            addFileButon: function (){
+             
+                 charts.options = {
+                    chart: {
+                        renderTo: 'container',
+                        defaultSeriesType: $('#chartType').val(),
+                        borderRadius: 0,
+                    },
+                    title: {
+                        text: ''
+                    },
+                    subtitle :{
+                        text: ''
+                    },
+                    xAxis: {
+                        categories: []
+                    },
+                    yAxis: {
+                        title: {
+                            text: ''
+                        }
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    series: [],
+                    credits: {
+                        enabled: false
+                    }
+                };
+
+                $('#file').on('change', function(evt) {
+    
+                    //Retrieve the first (and only!) File from the FileList object
+                    var file = evt.target.files[0];
+                    // file = file;
+                     charts.options.series = [];
+                     charts.options.title.text = $('#title').val();
+                     charts.options.subtitle.text = $('#subtitle').val();
+
+                    $('#dummy-chart-file').val(file.name.split(".")[0]);
+
+                    if(file) {
+
+                        var r = new FileReader();
+
+                        r.onload = function(e) {
+                            var data = e.target.result;
+
+                            // Split the lines
+                            var lines = data.split('\n');
+
+                            // Iterate over the lines and add categories or series
+                            $.each(lines, function(lineNo, line) {
+                                var items = line.split(',');
+
+                                // header line containes categories
+                                if(lineNo == 0) {
+                                    $.each(items, function(itemNo, item) {
+                                        if (itemNo > 0)  charts.options.xAxis.categories.push(item);
+                                    });
+                                }
+
+                                    // the rest of the lines contain data with their name in the first 
+                                    // position
+                                else {
+
+                                    var series = {
+                                        data: []
+                                    };
+
+                                    $.each(items, function(itemNo, item) {
+                                        if (itemNo == 0) {
+                                            series.name = item;
+                                        } else {
+                                            series.data.push(parseFloat(item));
+                                        }
+                                    });
+
+                                     charts.options.series.push(series);
+                                }
+                            });
+                            // Create the chart
+                            // chart = new Highcharts.Chart( charts.options);
+                             charts.chart = new Highcharts.Chart( charts.options);
+                        };
+
+                        r.readAsText(file);
+                    }
+                });
+            },
+
+            dropdownOptions: function(){
+
+                $('#chartType').on('change', function() {
+
+                     charts.chart = $('#container').highcharts();
+
+                    if( charts.chart) {
+                         charts.chart.destroy();
+                        var chartType = $('#chartType').val();
+
+                         charts.options.chart.defaultSeriesType = chartType;
+
+
+                         charts.chart = new Highcharts.Chart( charts.options);
+                    }
+                });
+
+                $('#charts-panel #add-chart').on('click', function() {
+                     loadInfographic();
+                    $('#charts-wrapper').addClass('hide');
+                });
+
+                $('#charts-panel .back-button').on('click', function() {
+                    $('#charts-wrapper').addClass('hide');
+                });
+            },
+        },
+
+
+        loadInfographic = function() {
+
+                var chart = $('#charts-panel svg')[0].outerHTML;
+
+                var dataUrl = 'data:image/svg+xml,' + encodeURIComponent(chart);
+
+                fabric.Image.fromURL(dataUrl, function(img) {
+
+                    img.top = 100;
+                    img.left = 100;
+                     Canvas.add(img);
+                     charts.chartsOnCanvas.push( img );
+                    img.myClass = "chart";
+
+                });
+        },
+
+listeners= {
+
+            menuItemButton: function() {
+	$("#addChart").click(function () {
+
+		$('#charts-wrapper').removeClass('hide');
+        $('#file').val("");
+        $('#dummy-chart-file').val("");
+        $('#container').empty();
+    });
+			}
+};
+
 $(document).ready(function() {
     //resizeCanvas();
     Canvas = new fabric.Canvas('canvas');
@@ -150,5 +308,7 @@ $(document).ready(function() {
       Canvas.add(shape);
     })
 
-
+listeners.menuItemButton();
+charts.addFileButon();
+         charts.dropdownOptions();
 });

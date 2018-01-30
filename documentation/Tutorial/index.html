@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
-	<title>Raportul Proiectului AnoFet</title>
+	<title>Ghid de utilizare a aplicatiei AnoFet</title>
 	<link rel="stylesheet" href="./css/scholarly.css">
 	<link rel="stylesheet" href="http://jade-lang.com/style/bundle.css">
 	<link rel="stylesheet" href="./css/prism-coy.css">
@@ -428,188 +428,113 @@ aside[typeof="schema:WPSideBar"] {
 		</section>
 
 		<section>
-			<h3><strong>Cuprins:</strong></h3>
-			<ol>
-				<li><a >Descriere</a></li>
-				<li><a >Tehnologii Folosite</a></li>
-				<li><a >Structura Site-ului</a></li>
-        <li><a >Detalii Progress</a></li>
-				<li><a >Bibliografie</a></li>
-			</ol>
+			<h3><strong>Ghid de utilizare</strong></h3>
 		</section>
 
-		<section typeof="sa:Abstract">
-		<a name="descriere"></a>
-		<h1><strong>Descriere</strong></h1>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Accesing the InEd will result in reaching the home page . In order to immediatly start the creation of a new infograf press the "Editor" button , which is situated at end of the top-left menu . </p>
 
-		  <p>&nbsp;&nbsp;&nbsp;&nbsp; Proiectul are ca scop dezvoltarea unui editor web de
-infografice . Utilizatorul va putea folosi un set predefinit de elemente de
-redare a datelor (e.g., grafice diferite, liste de prezentare, alte componente
-vizuale etc.) pentru a crea model sugestiv al datelor incarcate de acesta . Proiectele pot fi private sau pot fi publice .</p>
+		<h3><strong>Prima pagina</strong></h3>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;   Sursele de date pe baza cărora se va realiza infograficul vor
-      putea fi importate din fişiere locale (în formatele CSV şi JSON), pe baza unui
-      URL . Infograficele create vor putea fi exportate ca imagini PNG şi ilustraţii
-      SVG.</p>
+    <figure typeof="sa:Image">
+      <center><p><img src="Home.png" alt="home " width="100%"></p></center>
+    </figure>
 
-    <h2>Actionari/Interese</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Upon pressing the editor button you will be transported this sub-page , which contains all the functionalities required to create and store your project.</p>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Creator: pune la dispozitia utilizatorilor o
-        platforma specializata in ilustrarea concisa si sugestiva a unor cantiati mari de date,
-        asigurand in acelasi timp existenta acestei reprezentari intr-un format usor de distribuit</p>
+    <h3><strong>Pagina Editor</strong></h3>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizatorii : obtine o reprezentare eleganta a datelor, care poate ajuta
-      la evidentierea rapida a unor trenduri care reies din datele culese </p>
+    <figure typeof="sa:Image">
+      <center><p><img src="editorPage.png" alt="home " width="60%"></p></center>
+    </figure>
 
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;In order to add a graph to the project all you need to do is toggle the graph menu ,action performed by pressing on the "pie chart" icon from the left sidebar. In the graph menu you will find a space in which to choose the desired graph style , followed a place to imput the csv file that will become a graph. Pressing the "add" button after filling the desired configuration is needed in order for the text to appear in the project space . </p>
 
-    <h2>Scenarii de utilizare</h2>
+		<h3><strong>Add Graph</strong></h3>
 
-    <h3>Utilizatorul isi creaza un cont</h3>
+    <figure typeof="sa:Image">
+      <center><p><img src="graphs.png" alt="home " width="100%"></p></center>
+    </figure>
 
-    <h4>Obiectiv</h4>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizatorul obtine un cont
-        prin care poate accesa functionalitatile platformei . </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; In order to add text to the project all you need to do is toggle the text menu ,action performed by pressing on the "A" from the left sidebar. In the text menu you will find a space in which to place the desired sentence/paragraph , followed by various meens to customize the appearance of the said text. Pressing the add text button after filling the desired configuration is needed in order for the text to appear in the project space .</p>
 
-    <h4>Pasi</h4>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizatorul apasa butonul "Sign up" prezent pe pagina menu , accesibila prin
-          apasarea butonului cu aceeasi denumire din dreapta sus sau prin utilizarea
-          "scroll-ului" pentru a parcurge subcomponentele paginii principale pana la
-          meniu. Isi alege un nume de utilizator valid , o parola care este in
-          conformitate cu standardele minime pentru securitate . Furnizeaza un email
-          valid. Apasa butonul create si schimba datele corespunzatoare , in
-          eventualitatea in care nu sunt acceptate.
-          Alternativ poate folosi contul propriu de facebook pentru a crea rapid contul pentru InEd</p>
+    <h3><strong>Inserare Text</strong></h3>
 
-    <h4>Extensii</h4>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizatorul uita parola ,
-        datorita lipsei unui sistem de recuperare a parolei acesta trebuie sa
-        contacteze administatorii sitului.</p>
+    <figure typeof="sa:Image">
+      <center><p><img src="addText.png" alt="home " width="100%"></p></center>
+    </figure>
 
-    <h3>Utilizatorul creaza un infograf</h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Introducing basic shapes is performed by toggling the shape menu signified by an empty square , situated in the left sidebar (3rd button from top to bottom). Similarly to the text there exists limited customization.  </p>
 
-    <h4>Obiectiv</h4>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Crearea unui infograf.</p>
+    <h3><strong>Add Shapes</strong></h3>
 
-    <h4>Pasi</h4>
+    <figure typeof="sa:Image">
+      <center><p><img src="addShape.png" alt="home " width="100%"></p></center>
+    </figure>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizatorul (dupa logare ) apasa butonul "Editor" , ultimul
-        buton din cadrul meniului (din stanga sus). Selecteaza un template in cazul in care are un format
-        similar cu cel dorit . In absenta unui template satisfacator utiliztorul  poate
-        sa creeze o pagina libera , unde pot fi adaugate oricare din tipurile de grafuri care vor
-        ilustra datele incarcate de utilizator.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Adding an image from your local files is performed by toggling the image menu situated in the left sidebar (4th button from top to bottom). Adding an image is realized by pressing the "Browse" button followed by choosing the desired image from your local file and pressing the "Add Image" button. </p>
 
-    <h4>Extensii</h4>
+    <h3><strong>Add Picture</strong></h3>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;In cazul in care utilizatorul nu incarca datele
-  intr-un format corespunzator graficele nu vor putea fi generate</p>
+    <figure typeof="sa:Image">
+      <center><p><img src="addPicture.png" alt="home " width="100%"></p></center>
+    </figure>
 
-    <h3>Utilizatoul descarca infograficul dorit</h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Resizing the project space in order to fit your is performed by toggling the resize menu situated in the left sidebar (5th button from top to bottom) . After altering the existing dimensions pressing the "Enter" button on your keyboard or mouse clicking in the page will result in the desired reshape occuring.</p>
 
-    <h4>Obiectiv</h4>
+    <h3><strong>Resize/Recolor Canvas</strong></h3>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Obtinerea infograficelor pe masina
-        proprie intr-un format usor transferabil.</p>
+    <figure typeof="sa:Image">
+      <center><p><img src="resizeEditorPage.png" alt="home " width="100%"></p></center>
+    </figure>
 
-    <h4>Pasi</h4>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Deleting an existing object from the project space is performed by clicking on the said object at which point the delete option will manifest itself in the left sidebar (6th button from top to bottom which only appears when an object is selected) .</p>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Utilizatorul (dupa logare) apasa pe butonul aflat
-        in dreapta sus . Dupa aparitia tabelului care contine toate infograficele ca
-        ii apartin, il gaseste in lista pe cel dorit si apasa butonul din dreapta
-        acelui infograf pentru salvarea datelor colectate . Alege fomatul dorit si
-        apasa save. </p>
+    <h3><strong>Delete Object</strong></h3>
 
-    <h4>Extensii</h4>
+    <figure typeof="sa:Image">
+      <center><p><img src="preDelete.png" alt="home " width="100%"></p></center>
+    </figure>
 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;In cazul in care utilizatorul doreste o versiune precedenta a fisierului, el va
-        trebui manual sa recreeze infograficul dorit (nu este prezent un sistem de
-        versionare)</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; </p>
 
+    <h3><strong>After Delete</strong></h3>
 
-		</section>
+    <figure typeof="sa:Image">
+      <center><p><img src="postDelete.png" alt="home " width="100%"></p></center>
+    </figure>
 
-		<section typeof="sa:Results">
-		<a name="tehnologii"></a>
-		<h1><strong>Tehnologii Folosite</strong></h1>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Resizing an existing object from the project space is performed by selecting the object (mouse right-click) at which point 8 delimitator points will appear , mouse over one of the delimitators, right click while the cursor looks like the cursor in the bottom image then drag to the desired dimension. </p>
 
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;  In cadrule acestei aplicatii vom folosii urmatoarele tehnologii:</p>
+    <h3><strong>Resize Object</strong></h3>
 
-		<ul>
-			<h4><li><strong>HTML5,CSS3,CSV,JSON</strong>: pentru partea de front-end care va oferii o interfata prietenoasa utilizatorului;</li></h4>
-			<h4><li><strong>Fabric.JS pentru trasarea componentelor grafice;</li></h4>
+    <figure typeof="sa:Image">
+      <center><p><img src="redimensionPicture.png" alt="home " width="100%"></p></center>
+    </figure>
 
-		</ul>
-		</section>
-	    <h4><strong><center> CSV<img src="csv.jpg" alt="CSV " width="10%"></center></strong></h4>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp; Acesta este  un format de fisier care ne va ajuta sa salvam datele intr-un tabel structurat sau pentru a face schimb de date între aplicații similare în mod diferit .</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Moving an existing object inside the project space is performed by "mousing over" the object  right click while the cursor looks like the cursor in the bottom image then drag to the desired destination. </p>
 
-		 <h4><strong><center> JSON<img src="json.png" alt="JSON " width="10%"></center></strong></h4>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp; Cu ajutorul acestu format vom realiza interschimb intre date. Este un format text, inteligibil pentru oameni, utilizat pentru reprezentarea obiectelor și a altor structuri de date și este folosit în special pentru a transmite date structurate prin rețea, procesul purtând numele de serializare.  Eleganța formatului JSON provine din faptul că este un subset al limbajului JavaScript (ECMA-262 3rd Edition) , fiind utilizat alături de acest limbaj.</p>
+    <h3><strong>Move Object</strong></h3>
 
-    <h4><strong><center> Fabric.js<img src="Fabricjs.png" alt="D3.js " width="10%"></center></strong></h4>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp; Acesta este o unealta pentru realizarea elementelor grafice in cadrul "canvasului" prezent in HTML5 si modificarea acestora in mod dinamic . Se foloseste de raspanditele standarde SVG ,HTML5 si CSS. </p>
+    <figure typeof="sa:Image">
+      <center><p><img src="movePicture.png" alt="home " width="100%"></p></center>
+    </figure>
 
-    <h4><strong><center> Github<img src="Github.png" alt="Github " width="10%"></center></strong></h4>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp; GitHub este un serviciu de găzduire web pentru proiecte de dezvoltare a software-ului care utilizează sistemul de control al versiunilor Git. </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;  Rotating an existing object from the project space is performed by selecting the object (mouse right-click) at which point above the object will appear a box connected to the object by a line , mouse over the box right click while the cursor looks like the cursor in the bottom image then drag to the desired angle.</p>
 
-		<section typeof="sa:Results">
-		<a name="site"></a>
-		<h1><strong>Structura Site-ului</strong></h1>
-           <p>&nbsp;&nbsp;&nbsp;&nbsp;Pentru navigarea si intelegera interactiunilor in mod optim se pot consulta urmatoarele diagrame</p>
-              <figure typeof="sa:Image">
-              <h3>1.Use Case</h3>
-		<center><p><img src="UsecaseDiagram.png" alt="Use Case " width="70%"></p></center>
-		</figure>
-		     <figure typeof="sa:Image">
-              <h3>2.Sequence Diagram</h3>
-		<center><p><img src="SequenceDiagram.png" alt="SequenceDiagram " width="60%"></p></center>
-		</figure>
-		</figure>
-		     <figure typeof="sa:Image">
-              <h3>3.Communications Diagram</h3>
-		<center><p><img src="CommunicationsDiagram.png" alt="CommunicationsDiagram " width="60%"></p></center>
-		</figure>
+    <h3><strong>Rotate Object</strong></h3>
+
+    <figure typeof="sa:Image">
+      <center><p><img src="rotatePicture.png" alt="home " width="100%"></p></center>
+    </figure>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp; Saving a project to the local file is performed by toggling the save menu which is situated at the right-most corner , then chooshing the desired file format by pressing the coresponding button.</p>
+
+    <h3><strong>Save Progress</strong></h3>
+
+    <figure typeof="sa:Image">
+      <center><p><img src="saveCanvas.png" alt="home " width="100%"></p></center>
+    </figure>
 
 
-		<figure typeof="sa:Image">
-              <h3>4.StateDiagram</h3>
-		<center><p><img src="StateDiagram.png" alt="StateDiagram" width="60%"></p></center>
-		</figure>
-            </figure>
-		     <figure typeof="sa:Image">
 
-    <section typeof="sa:Abstract">
-       <a name="detaliiProgress"></a>
-       		<h1><strong>Detalii Progress</strong></h1>
-
-    <p>&nbsp;&nbsp;&nbsp;&nbsp; Dupa intampinarea unor dificultati tehnice cu D3.js sa ajuns la comun acord utilizarea unei metode diferite de reprezentare a datelor .</p>
-
-    <p>&nbsp;&nbsp;&nbsp;&nbsp; Implementarea proiectului a avut loc prin segmentarea aplicatiei in componentele ei de baza atribuirea unor functionalitati pentru implementare fiecarui membru al echipei.Componentele individuale au fost create in medii izolate apoi integrate in proiectul principal cand acestea au ajuns la stadiul de funtionare .  </p>
-
-    <p>&nbsp;&nbsp;&nbsp;&nbsp; Testarea fiecarei componente , dupa integrarea acestora in proiectului , a fost facuta dupa metoda "black box testing"  de catre persoanele care nu au participat in dezvoltarea componentei . </p>
-
-		<section typeof="sa:ReferenceList">
-		<a name="bibliografie"></a>
-		<h1><strong>Bibliografie</strong></h1>
-
-		<ul>
-
-      <li>Link: <a href="http://fabricjs.com/">http://fabricjs.com/</a></li>
-      <li>Link: <a href="https://stackoverflow.com/">https://stackoverflow.com/</a></li>
-      <li>Link: <a href="https://d3js.org/">https://d3js.org/</a></li>
-      <li>Link: <a href="https://www.analyticsvidhya.com/">https://www.analyticsvidhya.com/</a></li>
-      <li>Link: <a href="https://infogram.com">https://infogram.com</a></li>
-			<li>Link: <a href="http://www.w3schools.com/">http://www.w3schools.com/</a></li>
-
-		</ul>
-		</section>
-	</article>
-    <footer>
-      <p>
-        <a href="http://www.info.uaic.ro/bin/Main/">FII</a>
-		•
-        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-projects.html">Dezvoltarea aplicatiilor web la nivel de client</a>
-        •
-		 <a href="https://profs.info.uaic.ro/~busaco/teach/courses/cliw/projects/">Proiecte</a>
-      </p>
-    </footer>
 </body></html>
